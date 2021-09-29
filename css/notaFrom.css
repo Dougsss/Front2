@@ -1,0 +1,45 @@
+#form_notas{
+    padding: 20px;
+    background-color: #104E8B;
+    border-radius: 5px;
+    top: 30%;
+    left: 40%;
+    height: 300px;
+    width: 350px;
+    z-index: 100;
+    display: none;
+    position: absolute;
+
+}
+
+.nt{
+    padding: 20px;
+    background-color: #f7d171;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+
+}
+
+.bxs-x-circle{
+    color: #1d1b31;
+}
+
+p{
+    padding-top: 10px;
+}
+
+h2{
+    color: #1d1b31;
+}
+
+.grid-container{
+    padding: 5px;
+    overflow-y: scroll;
+    height: 550px;
+} 
+
+#nota{
+    
+    
+}

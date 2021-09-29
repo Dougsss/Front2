@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/notaFrom.css">
+    <link rel="shortcut icon" href="./img/icons8-notes-64.png" type="imagem/icon">
+    <!-- Boxicons CDN Link Para baixar os icones do site -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>CheckNotes</title>
+</head>
+<body>
+  <!-- Definições do menu lateral  -->
+  <div class="sidebar">
+     <div class="logo_content">
+         <div class="logo">
+            <i class='bx bxs-check-shield'></i>
+            <div class="logo_name">Check Notes</div>
+         </div>
+      <i class='bx bx-menu' id="btn"></i>
+     </div> 
+     <ul class="nav_list">
+         <li>
+            <i class='bx bx-search-alt-2'></i>
+            <input type="text" placeholder="Busca...">
+            <span class="tooltip">Busca</span>
+         </li>
+         <li>
+            <a href="#">
+                <i class='bx bxs-home'></i>
+               <span class="links_name">Início</span>
+            </a>
+               <span class="tooltip">Início</span>
+        </li>
+        <li>
+            <a href="#" onclick="form_notas()">
+                <i class='bx bxs-plus-circle'></i>
+               <span class="links_name">Adicionar</span>
+            </a>
+               <span class="tooltip">Adicionar</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bxs-note' ></i>
+               <span class="links_name">Notas</span>
+            </a>
+               <span class="tooltip">Notas</span>
+        </li>
+        <li>
+            <a href="#">
+               <i class='bx bxs-checkbox-checked'></i>
+               <span class="links_name">Tarefas</span>
+            </a>
+               <span class="tooltip">Tarefas</span>
+        </li>
+        <li>
+            <a href="#">
+               <i class='bx bxs-star'></i>
+               <span class="links_name">Favoritos</span>
+            </a>
+               <span class="tooltip">Favoritos</span>
+        </li>
+     </ul>
+     <div class="perfil_conteudo">
+        <div class="perfil">
+            <div class="perfil_detalhes">
+                <img src="./img/profile_pic.jpeg" alt="profileImg">
+                <div class="nome_job">
+                    <div class="nome">Douglas Araujo</div>
+                    <div class="job">Programador Web</div>
+                </div>
+            </div>
+            <i class='bx bxs-log-out' id="log_out"></i>
+        </div>
+     </div>
+    </div>
+    <!-- Conteudo da pagina -->
+    <div class="home_conteudo">
+        <div class="texto">
+            <div class="saudacao">
+               <p>Olá, Douglas!</p> 
+            </div>
+            <div class="data">
+               <p id="date"></p>
+            </div>
+            <div class="noturno">
+                <button>Mode</button>
+            </div>
+
+        </div>
+    </div> 
+    <div class="parallaximg">
+        <img id="img_cabeca" src="./img/parallax.jpg" alt="parallaxImg">
+    </div>
+    <div class="box_notas">
+        <div class="box1">
+            <h1>Notas ></h1>
+            <div class="grid-container">
+                <div id="nota"></div>
+            </div>
+        </div>
+        <div class="box2">
+            <h1>Tarefas ></h1>
+        </div>
+
+    </div>  
+    <div id="form_notas">
+        <a href="#" onclick="fechar()">[Fechar]</a>
+        <div class="input_cont1">
+            <input id="titulo" class="input" type="text" placeholder="Título...">
+        </div>
+        <div class="input_cont2">
+            <input id="conteudo" class="input" type="text" placeholder="Conteudo...">
+        </div>
+        <button type="text" class="submit" onclick="criarNota()" id="btnCriarNota">Salvar!</button>
+    </div> 
+    
+    <script src="./app/app.js"></script>   
+</body>
+</html>
