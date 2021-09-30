@@ -37,13 +37,17 @@ let titulo = ""
 let conteudo = ""
 
 function criarNota(){
+  date = document.getElementById("date").value
   titulo = document.getElementById("titulo").value 
   conteudo = document.getElementById("conteudo").value 
 
   let notaSelection = document.getElementById("nota");
   notaSelection.innerHTML +=
    `<div class= "nt">
+    <div class= "fx">
     <a href="javascript:window.excluir()"><i class='bx bxs-x-circle'></i></a>
+    </div>
+    <p>${date}<p>
     <h2>${titulo}</h2>
     <p>${conteudo}<p>
     </div>`;
@@ -59,4 +63,10 @@ function fechar() {
 
 function excluir() {
   document.getElementById('nota').style.display='none';
+}
+
+/* funçao de quebrar linha */
+function auto_height(elem) {  
+  elem.style.height = "1px";
+  elem.style.height = (elem.scrollHeight)+"px";
 }

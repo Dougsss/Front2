@@ -107,12 +107,16 @@
 
     </div>  
     <div id="form_notas">
-        <a href="#" onclick="fechar()">[Fechar]</a>
+        <div class="fx">
+        <a href="#" onclick="fechar()"><i class='bx bxs-x-circle'></i></a>
+        </div>
+        <input id="date" type="date">
         <div class="input_cont1">
             <input id="titulo" class="input" type="text" placeholder="Título...">
         </div>
         <div class="input_cont2">
-            <input id="conteudo" class="input" type="text" placeholder="Conteudo...">
+            <!-- <input id="conteudo" class="input" type="text" placeholder="Conteudo..."> -->
+            <textarea rows="1" id="conteudo" class="input" placeholder="Conteudo..." oninput="auto_height(this)"></textarea>
         </div>
         <button type="text" class="submit" onclick="criarNota()" id="btnCriarNota">Salvar!</button>
     </div> 

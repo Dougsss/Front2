@@ -279,8 +279,8 @@ body{
     width: 100%;
     margin: 12px;
     display: flex;
-    position: absolute;
     z-index: 1;
+    position: absolute;
 }
 
 .sidebar.active ~ .home_conteudo{
@@ -321,7 +321,6 @@ body{
 
  .noturno{
     width: 8%;
-    
  }
 
  .box_notas{
